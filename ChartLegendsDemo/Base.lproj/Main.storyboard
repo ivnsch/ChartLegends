@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChartLegendsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQ1-fy-Zwh" customClass="ChartLegendsView" customModule="ChartLegends">
+                                <rect key="frame" x="20" y="155" width="335" height="105"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="ztw-mD-sHW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layoutTypeRawValue" value="flowLeft"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cA-H6-fng" customClass="ChartLegendsView" customModule="ChartLegends">
+                                <rect key="frame" x="221" y="280" width="134" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="XeV-7t-Dbb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layoutTypeRawValue" value="columns"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="columns">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzM-BH-e64" customClass="ChartLegendsView" customModule="ChartLegends">
+                                <rect key="frame" x="20" y="280" width="181" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="6bM-dg-yMR"/>
+                                    <constraint firstAttribute="width" constant="181" id="I5s-uA-iiO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layoutTypeRawValue" value="columns"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="columns">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3e-CK-Yqo" customClass="ChartLegendsView" customModule="ChartLegends">
+                                <rect key="frame" x="20" y="100" width="335" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="vcI-WV-Utu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layoutTypeRawValue" value="flowLeft"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JzM-BH-e64" firstAttribute="top" secondItem="QQ1-fy-Zwh" secondAttribute="bottom" constant="20" id="0OG-FY-3XI"/>
+                            <constraint firstItem="QQ1-fy-Zwh" firstAttribute="top" secondItem="x3e-CK-Yqo" secondAttribute="bottom" constant="20" id="4c2-My-j73"/>
+                            <constraint firstItem="3cA-H6-fng" firstAttribute="leading" secondItem="JzM-BH-e64" secondAttribute="trailing" priority="999" constant="20" id="EyS-90-aSq"/>
+                            <constraint firstAttribute="trailing" secondItem="x3e-CK-Yqo" secondAttribute="trailing" constant="20" id="PcV-p9-zTp"/>
+                            <constraint firstAttribute="trailing" secondItem="QQ1-fy-Zwh" secondAttribute="trailing" constant="20" id="Y0u-v2-r6D"/>
+                            <constraint firstItem="JzM-BH-e64" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Zbg-cW-HlH"/>
+                            <constraint firstItem="x3e-CK-Yqo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="c3w-bj-q0t"/>
+                            <constraint firstAttribute="trailing" secondItem="3cA-H6-fng" secondAttribute="trailing" constant="20" id="kp5-V6-TxZ"/>
+                            <constraint firstItem="QQ1-fy-Zwh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="mhQ-dz-qLK"/>
+                            <constraint firstItem="3cA-H6-fng" firstAttribute="top" secondItem="JzM-BH-e64" secondAttribute="top" id="wf5-ob-7G4"/>
+                            <constraint firstItem="x3e-CK-Yqo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="ySk-Id-oyG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="columnsLegendsView" destination="JzM-BH-e64" id="UFT-q1-IRY"/>
+                        <outlet property="horizontalFlowLegendsView" destination="QQ1-fy-Zwh" id="E3D-8u-fsc"/>
+                        <outlet property="horizontalFlowSmallLegendsView" destination="x3e-CK-Yqo" id="z8F-Oe-KdF"/>
+                        <outlet property="singleColumnLegendsView" destination="3cA-H6-fng" id="t45-9s-nhO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
