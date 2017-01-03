@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "ChartLegends"
-  s.version = "0.0.2"
+  s.version = "0.0.3"
   s.summary = "Powerful customizable legends for all kind of charts"
   s.homepage = "https://github.com/i-schuetz/SwiftCharts"
   s.license = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
