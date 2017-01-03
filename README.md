@@ -11,11 +11,11 @@ Swift 3.0, iOS 8+
 ![ScreenShot](Screenshots/IMG_1283.PNG)
 
 ## Features:
-- Configurable flow and column layouts.
+- Define the layout with only a flag, in interface builder or code.
 - Predefined shapes and possibility to use custom paths.
 - Per-cell configuration or overrides, e.g. to set a different font or shape than other cells.
 - Custom views via `UICollectionView` subclasses.
-- Autolayout support, configurable in Interface Builder.
+- Full autolayout support
 - Interactive
 - Scrollable
 - Compatible with any chart type or library.
