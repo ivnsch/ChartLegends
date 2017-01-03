@@ -1,5 +1,7 @@
 # ChartLegends
 
+[![Version](https://img.shields.io/cocoapods/v/ChartLegends.svg?style=flat)](http://cocoadocs.org/docsets/ChartLegends)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/ChartLegends.svg?style=flat)](http://cocoadocs.org/docsets/ChartLegends)
 
 Powerful customizable chart legends
@@ -20,13 +22,21 @@ Swift 3.0, iOS 8+
 
 ## Installation
 
-#### CocoaPods
+### CocoaPods
 
 Add to your Podfile:
 
 ```ruby
 use_frameworks!
 pod 'ChartLegends'
+```
+
+### Carthage
+
+Add to your Cartfile:
+
+```
+github "i-schuetz/ChartLegends"
 ```
 
 ## Quickstart
