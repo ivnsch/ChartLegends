@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol ChartLegendsDelegate {
+public protocol ChartLegendsDelegate: class {
     
     func onSelectLegend(legend: ChartLegend, cell: UICollectionViewCell, indexPath: IndexPath)
 }

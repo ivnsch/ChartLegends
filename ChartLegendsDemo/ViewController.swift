@@ -34,13 +34,7 @@ class ViewController: UIViewController, ChartLegendsDelegate {
         super.viewDidLoad()
 
         horizontalFlowSmallLegendsView.setLegends(.rect(width: 12, height: 12), Array(legends[0...2]))
-        
-        
-        horizontalFlowLegendsView.setLegends(.circle(radius: 7),
-             (text: "Chemicals", color: UIColor.orange),
-             (text: "Forestry", color: UIColor.green)
-        )
-        
+
         horizontalFlowLegendsView.setLegends(.circle(radius: 7), legends)
         columnsLegendsView.setLegends(legends)
         
@@ -60,8 +54,8 @@ class ViewController: UIViewController, ChartLegendsDelegate {
         let defaultShape: ChartLegendShape = .rect(width: 14, height: 5)
         let mixedShapeLegends: [DefaultShapeChartLegend] = legends.map {
             if $0 == "Health" {
-                return DefaultShapeChartLegend(text: $0, color: $1, pathGenerator: {size in
-                    self.createHeartPath(size: size, scale: 1)
+                return DefaultShapeChartLegend(text: $0, color: $1, pathGenerator: {[weak self] size in
+                    self?.createHeartPath(size: size, scale: 1) ?? UIBezierPath()
                 })
             } else {
                 return DefaultShapeChartLegend(text: $0, color: $1, shape: defaultShape)

@@ -40,11 +40,11 @@ open class ChartLegendsView: UIView {
     
     public var constraintConstants: ChartLegendsConstraintConstants?
 
-    public var delegate: ChartLegendsDelegate?
+    public weak var delegate: ChartLegendsDelegate?
     
     // MARK: - Internal / private vars
     
-    var collectionView: UICollectionView?
+    weak var collectionView: UICollectionView?
     
     fileprivate var cellType: CellType?
 
