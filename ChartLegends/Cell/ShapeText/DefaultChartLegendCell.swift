@@ -40,7 +40,11 @@ public class DefaultChartLegendCell: UICollectionViewCell, ChartLegendCell {
                 
                 shapeLayer.path = circlePath.cgPath
                 shapeLayer.fillColor = legend.color.cgColor
+                shapeLayer.backgroundColor = UIColor.clear.cgColor
                 shapeLayer.frame = shape.bounds
+                
+                shape.clipsToBounds = true
+                shape.backgroundColor = .clear
                 shape.layer.addSublayer(shapeLayer)
                 
             }
