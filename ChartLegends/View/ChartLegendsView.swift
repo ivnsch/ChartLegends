@@ -219,6 +219,7 @@ extension ChartLegendsView: UICollectionViewDataSource, UICollectionViewDelegate
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType!.reuseIdentifier, for: indexPath)
+        
         let legend = legends[indexPath.row]
         
         var chartLegendCell = cell as! ChartLegendCell
@@ -227,6 +228,9 @@ extension ChartLegendsView: UICollectionViewDataSource, UICollectionViewDelegate
             chartLegendCell.initConstraints(constants: constraintConstants)
         }
         cellConfigurator?(cell, legend, indexPath)
+        
+        cell.backgroundColor = .clear
+        
         return cell
     }
     

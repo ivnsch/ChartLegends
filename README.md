@@ -4,6 +4,8 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/ChartLegends.svg?style=flat)](http://cocoadocs.org/docsets/ChartLegends)
 
+This is a forked version that adds transparency behind the labels and the shape views.  A pull request will be issued.
+
 Powerful customizable chart legends
 
 Swift 3.0, iOS 8+
