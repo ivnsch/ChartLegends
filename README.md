@@ -38,7 +38,7 @@ pod 'ChartLegends'
 Add to your Cartfile:
 
 ```
-github "i-schuetz/ChartLegends"
+github "carbamide/ChartLegends"
 ```
 
 ## Quickstart
