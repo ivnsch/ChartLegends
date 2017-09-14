@@ -69,7 +69,7 @@ For example, to use legends with a small colored circle on the left:
 legendsView.setLegends(.circle(radius: 7), [
 	(text: "Chemicals", color: UIColor.orange),
     (text: "Forestry", color: UIColor.green)
-)]
+])
 ```
 
 If you want to show a shape that's not in the predefined types, you also can provide a path. Example:
@@ -80,7 +80,7 @@ let pathGenerator = {(size: CGSize) in
 legendsView.setLegends(pathGenerator, [
 	(text: "Chemicals", color: UIColor.orange),
     (text: "Forestry", color: UIColor.green)
-)]
+])
 ```
 
 Of course the idea is to expand the predefined types to support all possible regularly used paths. Don't hesitate to make a pull request with your path if you think it's of common interest!
