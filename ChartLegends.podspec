@@ -9,4 +9,9 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/i-schuetz/ChartLegends.git", :tag => s.version, :branch => 'master' }
   s.source_files = 'ChartLegends/*.swift', 'ChartLegends/**/*.swift'
   s.frameworks = "Foundation", "UIKit"
+  s.resource_bundles = {
+   'ChartLegends' => [
+       'ChartLegends/**/*.xib'
+   ]
+ }
 end

@@ -173,6 +173,12 @@ open class ChartLegendsView: UIView {
             collectionView?.register(UINib(nibName: cellType.reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: cellType.reuseIdentifier)
         } else if Bundle(identifier: frameworkBundleId)?.path(forResource: cellType.reuseIdentifier, ofType: "nib") != nil {
             collectionView?.register(UINib(nibName: cellType.reuseIdentifier, bundle: Bundle(identifier: frameworkBundleId)), forCellWithReuseIdentifier: cellType.reuseIdentifier)
+        } else {
+            let podBundle = Bundle(for: cellType.type)
+            let bundleURL = podBundle.url(forResource: "ChartLegends", withExtension: "bundle")
+            let bundle = Bundle(url: bundleURL!)!
+            let nib = UINib(nibName: cellType.reuseIdentifier, bundle: bundle)
+            collectionView?.register(nib, forCellWithReuseIdentifier: cellType.reuseIdentifier)
         }
     }
     
