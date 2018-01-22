@@ -33,7 +33,7 @@ public class DefaultChartLegendCell: UICollectionViewCell, ChartLegendCell {
 
                 let circlePath: UIBezierPath = legend.pathGenerator?(CGSize(width: shapeWidth.constant, height: shapeWidth.constant)) ?? {
                     switch legend.shape {
-                    case .circle(let radius): return UIBezierPath(arcCenter: CGPoint(x: shape.bounds.center.x, y: shape.bounds.center.y), radius: radius, startAngle: 0, endAngle: (2 * CGFloat(M_PI)), clockwise: true)
+                    case .circle(let radius): return UIBezierPath(arcCenter: CGPoint(x: shape.bounds.center.x, y: shape.bounds.center.y), radius: radius, startAngle: 0, endAngle: (2 * CGFloat(CGFloat.pi)), clockwise: true)
                     case .rect(let width, let height): return UIBezierPath(rect: CGRect(x: shape.bounds.center.x - width / 2, y: shape.bounds.center.y - height / 2, width: width, height: height))
                     }
                 }()

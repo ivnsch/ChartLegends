@@ -85,8 +85,8 @@ open class ChartLegendsView: UIView {
     // MARK: - Configuration
     
     public func configure<T>(cellType: T.Type, f: ((T, ChartLegend, IndexPath) -> Void)? = nil) where T: UICollectionViewCell, T: ChartLegendCell {
-        configure(cellType: .custom(CellTypeWrapper(T.self)), cellConfigurator: {pars in
-            f?(pars.0 as! T, pars.1, pars.2)
+        configure(cellType: .custom(CellTypeWrapper(T.self)), cellConfigurator: { cell, legend, indexPath in
+            f?(cell as! T, legend, indexPath)
         })
     }
     

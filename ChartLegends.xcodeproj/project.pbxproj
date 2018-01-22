@@ -14,7 +14,6 @@
 		6AC1CC811E1BE49700120720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1CC781E1BE49700120720 /* LaunchScreen.storyboard */; };
 		6AC1CC821E1BE49700120720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1CC7A1E1BE49700120720 /* Main.storyboard */; };
 		6AC1CC841E1BE49700120720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC7E1E1BE49700120720 /* ViewController.swift */; };
-		6AC1CC8B1E1BE8BC00120720 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1CC8A1E1BE8BC00120720 /* Info.plist */; };
 		6AC1CCBB1E1BEAAB00120720 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1CCA61E1BEAAB00120720 /* Info.plist */; };
 		6AC1CCBF1E1BEAEE00120720 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC991E1BEAAB00120720 /* CGRect.swift */; };
 		6AC1CCC01E1BEAEE00120720 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC9A1E1BEAAB00120720 /* ReusableView.swift */; };
@@ -323,17 +322,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Ivan Schuetz";
 				TargetAttributes = {
 					6A8C15701E19707700936AC6 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 37QAPDY2PR;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					6A8C158A1E1970F300936AC6 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 37QAPDY2PR;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -365,7 +366,6 @@
 				6AC1CCBB1E1BEAAB00120720 /* Info.plist in Resources */,
 				6AC1CC821E1BE49700120720 /* Main.storyboard in Resources */,
 				6AC1CC801E1BE49700120720 /* Assets.xcassets in Resources */,
-				6AC1CC8B1E1BE8BC00120720 /* Info.plist in Resources */,
 				6AC1CC811E1BE49700120720 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,7 +454,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -462,7 +464,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -505,7 +511,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -513,7 +521,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -550,7 +562,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schuetz.ChartLegendsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -564,7 +577,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schuetz.ChartLegendsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -584,7 +598,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.schuetz.ChartLegends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -606,7 +621,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.schuetz.ChartLegends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};

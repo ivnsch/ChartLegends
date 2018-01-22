@@ -6,7 +6,7 @@
 
 Easy to setup and highly customizable collection view based chart legends.
 
-Swift 3.0, iOS 8+
+Swift 4.0, iOS 8+
 
 ![ScreenShot](Screenshots/IMG_1283.PNG)
 

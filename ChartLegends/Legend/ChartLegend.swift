@@ -20,6 +20,6 @@ public protocol ChartLegend {
 extension ChartLegend {
     
     public func contentSize(font: UIFont) -> CGSize {
-        return (text as NSString).size(attributes: [NSFontAttributeName: font])
+        return (text as NSString).size(withAttributes: [.font: font])
     }
 }
