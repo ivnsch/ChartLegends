@@ -120,7 +120,7 @@ open class ChartLegendsView: UIView {
             
         case .flowLeft:
             let flowLayout = LeftAlignedCollectionViewFlowLayout()
-            flowLayout.scrollDirection = UICollectionViewScrollDirection.vertical
+            flowLayout.scrollDirection = UICollectionView.ScrollDirection.vertical
             sharedFlowLayoutSettings(flowLayout: flowLayout)
             return flowLayout
             
