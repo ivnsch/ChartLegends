@@ -10,8 +10,8 @@ import UIKit
 
 public class DefaultChartLegendCell: UICollectionViewCell, ChartLegendCell {
 
-    @IBOutlet weak var shape: UIView!
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet public weak var shape: UIView!
+    @IBOutlet public weak var label: UILabel!
     
     @IBOutlet weak var leading: NSLayoutConstraint!
     @IBOutlet weak var shapeWidth: NSLayoutConstraint!
