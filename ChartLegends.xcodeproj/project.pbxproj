@@ -14,7 +14,6 @@
 		6AC1CC811E1BE49700120720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1CC781E1BE49700120720 /* LaunchScreen.storyboard */; };
 		6AC1CC821E1BE49700120720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1CC7A1E1BE49700120720 /* Main.storyboard */; };
 		6AC1CC841E1BE49700120720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC7E1E1BE49700120720 /* ViewController.swift */; };
-		6AC1CCBB1E1BEAAB00120720 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1CCA61E1BEAAB00120720 /* Info.plist */; };
 		6AC1CCBF1E1BEAEE00120720 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC991E1BEAAB00120720 /* CGRect.swift */; };
 		6AC1CCC01E1BEAEE00120720 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC9A1E1BEAAB00120720 /* ReusableView.swift */; };
 		6AC1CCC11E1BEAF700120720 /* DefaultChartLegendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1CC931E1BEAAB00120720 /* DefaultChartLegendCell.swift */; };
@@ -322,7 +321,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Ivan Schuetz";
 				TargetAttributes = {
 					6A8C15701E19707700936AC6 = {
@@ -363,7 +362,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC1CCBB1E1BEAAB00120720 /* Info.plist in Resources */,
 				6AC1CC821E1BE49700120720 /* Main.storyboard in Resources */,
 				6AC1CC801E1BE49700120720 /* Assets.xcassets in Resources */,
 				6AC1CC811E1BE49700120720 /* LaunchScreen.storyboard in Resources */,
@@ -458,6 +456,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -465,6 +464,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -515,6 +515,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -522,6 +523,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
