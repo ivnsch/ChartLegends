@@ -326,7 +326,7 @@
 				TargetAttributes = {
 					6A8C15701E19707700936AC6 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 37QAPDY2PR;
+						DevelopmentTeam = LHAA3QSYMW;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -559,7 +559,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 37QAPDY2PR;
+				DEVELOPMENT_TEAM = LHAA3QSYMW;
 				INFOPLIST_FILE = "$(SRCROOT)/ChartLegendsDemo/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schuetz.ChartLegendsDemo;
@@ -574,7 +574,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 37QAPDY2PR;
+				DEVELOPMENT_TEAM = LHAA3QSYMW;
 				INFOPLIST_FILE = "$(SRCROOT)/ChartLegendsDemo/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schuetz.ChartLegendsDemo;
